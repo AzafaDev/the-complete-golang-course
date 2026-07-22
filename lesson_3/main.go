@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 func main() {
 	// variable of type uint8
@@ -30,5 +33,11 @@ func main() {
 	fmt.Println(myRune)
 	myRune = '🗿'
 	fmt.Println(myRune)
-}
 
+	convertedNumber := strconv.Itoa(23000000000000000)
+	fmt.Println(convertedNumber)
+
+	convertedString, _ := strconv.Atoi(convertedNumber)
+	fmt.Println(convertedString)
+
+}
